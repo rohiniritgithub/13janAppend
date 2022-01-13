@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div id="myid">
+	<h1>we are Learning Js</h1>
+	<h1 >I am h1</h1>
+
+	 </div>
+	 <script type="text/javascript">
+	 	//creating new element h2
+	 	var nENode=document.createElement("h2")
+	 	//carete text node
+	 	var nTNode=document.createTextNode("Text created by javacript");
+	 	//creating new comment node
+	 	var nCNode=document.createComment("Comment from javascript");
+	 	nENode.appendChild(nTNode);
+	 	//display what nEnode have
+	 	console.log(nENode);
+	 	nENode.appendChild(nCNode);
+	 	console.log(nENode);
+
+	 	var targetNode=document.getElementById("myid");
+	 	console.log(targetNode);
+
+	 	targetNode.appendChild(nENode);
+	 	console.log(targetNode);
+	 </script>
+
+</body>
+</html>

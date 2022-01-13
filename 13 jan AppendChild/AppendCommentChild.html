@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div id="myid">
+		<h1>we are Learing js</h1>
+		<h1> i am h1</h1>
+	</div>\<script type="text/javascript">
+		var ncNode=document.createComment("comment from js");
+		var targetNode=document.getElementById("myid");
+		//Append new comment to div
+		targetNode.appendChild(ncNode);
+		console.log(targetNode);
+		var targetNode=document.getElementById('myid');
+		targetNode.appendChild(document.createComment("comment from js"));
+	</script>
+
+</body>
+</html>

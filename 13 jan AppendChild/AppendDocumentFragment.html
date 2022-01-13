@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div id="myid">
+		<h1>we are learning javascrip</h1>
+		<h1>i am h1</h1>
+	</div>
+	<script type="text/javascript">
+		var targetNode=document.getElementById("myid");
+		var df=document.createDocumentFragment();
+		var hNode=document.createElement("h3");
+		var pNode=document.createElement("p");
+		hNode.textContent="h3 from js";
+		pNode.textContent="p from js";
+		df.appendChild(hNode);
+		df.appendChild(pNode);
+		targetNode.appendChild(df);
+		console.log(targetNode);
+	</script>
+
+</body>
+</html>
